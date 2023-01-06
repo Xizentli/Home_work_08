@@ -98,10 +98,10 @@ int[,] GetSortArray (int[,] newMatrix)
 }
 
 
-//int m = GetNumber("Введите количество строк: ");
-//int n = GetNumber("Введите количество столбцов: ");
+int m = GetNumber("Введите количество строк: ");
+int n = GetNumber("Введите количество столбцов: ");
 
-int[,] matrix = InitMatrix(3, 4);
+int[,] matrix = InitMatrix(m, n);
 Console.WriteLine("Первоначальная матрица:");
 PrintMatrix(matrix);
 int[,] newMatrixSort = GetSortArray (matrix);
